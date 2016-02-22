@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.razon30.projectdonation.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:enabled="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="xl"
+        app:bootstrapText="{fa_angellist} Give a stand\n{fa_dollar} Donate some"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        app:showOutline="true"
+        />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+
+        android:enabled="true"
+        android:textSize="20sp"
+        app:bootstrapBrand="warning"
+        app:bootstrapSize="lg"
+        app:bootstrapText="{fa_map_o} How to Reach to us"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        app:showOutline="true"
+        />
+
+
+    <!--<include-->
+    <!--layout="@layout/personimage">-->
+    <!--</include>-->
+
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/moreorless"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+
+        app:bootstrapBrand="secondary"
+        app:bootstrapSize="lg"
+        app:bootstrapText="{fa_user_plus} Lets make some life beautiful\nBe a registered Donar"
+        app:roundedCorners="true"
+        app:showOutline="true"
+        />
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="15dp"
+        app:ael_duration="500"
+        app:ael_interpolator="linear"
+        app:ael_orientation="vertical">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/tvBiography"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:enabled="false"
+            app:bootstrapBrand="warning"
+            app:bootstrapSize="md"
+            app:bootstrapText="1. You Have to Donate minimum 50tk Per month.\n2. Three month no donation may cancel Your registration\n3. All decision is given by central committee.\n4. Obviously you will be able to ask and suggest anything you want\n"
+            app:roundedCorners="true"
+            app:showOutline="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/tvBiography"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                app:bootstrapBrand="danger"
+                app:bootstrapSize="lg"
+                app:bootstrapText="{fa_thumbs_o_down} Cancel"
+                app:buttonMode="regular"
+                app:roundedCorners="true"
+                app:showOutline="true"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/agree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="BootstrapButton"
+                app:bootstrapBrand="success"
+                app:bootstrapSize="lg"
+                app:bootstrapText="{fa_thumbs_o_up} I agree"
+                app:buttonMode="regular"
+                app:roundedCorners="true"
+                app:showOutline="true"
+                />
+
+
+        </LinearLayout>
+
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+    <com.beardedhen.androidbootstrap.AwesomeTextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        app:bootstrapBrand="secondary"
+        app:bootstrapText="{fa_user}  Already a Part of US? Login"
+        app:fontAwesomeIcon="fa_android"
+        app:roundedCorners="true"
+        app:showOutline="true"
+        android:id="@+id/loginBtn"
+        />
+
+
+</LinearLayout>
